@@ -381,8 +381,6 @@ Overdraft account has $-28
 Overdraft account has $-28
 ```
 
-![gif](https://giphy.com/embed/KoT4kuASul1Di)
-
 ### What are Dunder Methods (Magic Methods)? 
 
 > Dunder is short-hand for *d*ouble *under*score.
