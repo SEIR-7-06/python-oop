@@ -83,7 +83,7 @@ Let's have a look at what this might look like in Python...
 $ ipython
 ```
 
-> You may have to run `pip install ipython` if you see error messages about it not being installed.
+> You may have to run `pip3 install ipython` if you see error messages about it not being installed.
 
 ```py
 class User:
