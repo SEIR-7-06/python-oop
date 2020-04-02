@@ -381,7 +381,7 @@ Overdraft account has $-28
 Overdraft account has $-28
 ```
 
-<img src="https://giphy.com/gifs/the-office-KoT4kuASul1Di" alt="Dunder Mifflin Gif" />
+<iframe src="https://giphy.com/embed/KoT4kuASul1Di" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-office-KoT4kuASul1Di">via GIPHY</a></p>
 
 ### What are Dunder Methods (Magic Methods)? 
 
