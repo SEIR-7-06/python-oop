@@ -426,4 +426,4 @@ Such dunder exist for ***almost every operator***! [Reference on more](http://ww
 
 > 20 minutes exercise. 5 minutes review.
 
-Clone down [this repo](https://git.generalassemb.ly/dc-wdi-python-django/codebar) and follow the instructions in the readme.
+Clone down [this repo](https://git.generalassemb.ly/SF-SEI-9/codebar) and follow the instructions in the readme.
