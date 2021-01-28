@@ -32,11 +32,11 @@ complex. We can't keep all the code (and what it does) in our head at once.
 Instead, we often want to only think about a portion of the code in a given
 moment.
 
-Objects help us organize and think about our programs. Let's say for example I
-have an object for a pizza parlor. That object has all the information about
-the pizza parlor stored as properties on that object. When I call
-`pizzaParlor.createCustomerOrder()` to handle a customer's order I don't have to
-think about all the code related to creating a customer order. I can just think
+Objects help us organize and think about our programs. Let's say for example we
+have an object for a pizza parlor. Inside that object is all the information about
+the pizza parlor and all the functionality that it would need to know about. When
+I call `pizzaParlor.createCustomerOrder()` to handle a customer's order I don't have
+to think about all the code related to creating a customer order. I can just think
 at a high level, when I call `pizzaParlor.createCustomerOrder()` a customer order
 will be created. This is a form of *abstraction*... I don't need to think about
 the details, just what's happening at a high-level. It is often said that writing
