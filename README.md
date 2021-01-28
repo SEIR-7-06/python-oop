@@ -20,7 +20,7 @@ desks, cars, tacos, Britney Spears songs, and so on (all the *things*). Since
 it is our  natural mental tendency to understand the world in terms of objects,
  this is very useful for *modelling* things in the real world in our programs.
 
-Instead of a bunch of variables and functions (procedural style), we can group
+Instead of a bunch of variables and functions, we can group
 relevant data and functions into objects, grouping related data and behavior
 together. We think about them as individual, self-contained units. This 
 grouping of properties (data) and methods is a kind of **encapsulation**.
@@ -32,12 +32,16 @@ complex. We can't keep all the code (and what it does) in our head at once.
 Instead, we often want to only think about a portion of the code in a given
 moment.
 
-Objects help us organize and think about our programs. If I'm looking at code
-for a Squad object, and I see it has associated *people*, and those people can
-dance when the squad dances, I don't need to think about or see all the code
-related to a person dancing. I can just think at a high level "ok, when a squad
-dances, all it's associated people dance". This is a form of *abstraction*... I
-don't need to think about the details, just what's happening at a high-level.
+Objects help us organize and think about our programs. Let's say for example I
+have an object for a pizza parlor. That object has all the information about
+the pizza parlor stored as properties on that object. When I call
+`pizzaParlor.createCustomerOrder()` to handle a customer's order I don't have to
+think about all the code related to creating a customer order. I can just think
+at a high level, when I call `pizzaParlor.createCustomerOrder()` a customer order
+will be created. This is a form of *abstraction*... I don't need to think about
+the details, just what's happening at a high-level. It is often said that writing
+software is about managing complexity. Abstraction is an excellent way to manage
+complexity.
 
 ### Ensuring Consistency 
 
@@ -55,8 +59,8 @@ less than zero".
 
 Objects should stand on their own and play well with others. If our objects
 are well-designed, then they interact with each other in well-defined ways.
-This allows us to refactor (rewrite) any object, and it should not impact
-(cause bugs) in other areas of our programs.
+This allows us to refactor (rewrite) any object, and it should not cause bugs
+in other areas of our programs.
 
 ## OOP Syntax: JavaScript vs. Python 
 
@@ -79,12 +83,6 @@ me.greet()
 
 Let's have a look at what this might look like in Python...
 
-```bash
-$ ipython
-```
-
-> You may have to run `pip3 install ipython` if you see error messages about it not being installed.
-
 ```py
 class User:
     def __init__(self, name):
@@ -104,14 +102,14 @@ Then, on the next line, we see a method called
 `__init__`. The `__init__` method is the initializer -- for the purposes of this
 class we will be using it like the `constructor` in JavaScript. We use it to set
 the initial values of our instance's attributes. The `__init__` method takes two
-parameters: `self` and `name`. By convention `self` is the first parameter to
-each method in a Python class--`self` refers to the instance of the class, for
- example, a `User` object.
+parameters: `self` and `name`. `self` is always the first parameter to each method
+in a Python class--`self` refers to the actual instance of the class, for example
+the `user` object that gets created when we invoke the `User` class.
 
-A particular `User` or instance of the `User` class will have a `name`
-attribute that we will set in our `__init__` method. Finally, the `greet`
-method displays a greeting formatted with the `User` instance's name. At the
-end, we **instantiate** a new user with `me = User("Justin")`. 
+The `user` object that gets created will have a `name` attribute that we will set
+in our `__init__` method. Finally, the `greet` method displays a greeting formatted
+with the `User` instance's name. At the end, we **instantiate** a new user with
+`me = User("Justin")`. 
 
 ### Exercise: Create a `BankAccount` class. 
 
@@ -210,7 +208,7 @@ call other phones and receive calls using phone numbers. A portable phone
 connected to a landline has specific features, just as a smartphone does.
 They are both types of phones. Roughly, this is how inheritance works.
 
-We can define one general class to model something like an **Phone** and then
+We can define one general class to model something like a **Phone** and then
 `inherit` the methods and properties of the class to make new classes out of
 the first class, like **IPhone** and **AndroidPhone**.
 
